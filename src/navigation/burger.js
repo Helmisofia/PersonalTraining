@@ -12,6 +12,8 @@ import FaceIcon from '@material-ui/icons/Face';
 import DirectionsRunIcon from '@material-ui/icons/DirectionsRun';
 import Customerlist from '../components/customerlist';
 import Traininglist from '../components/traininglist';
+import Calendarpage from '../components/calendar';
+import TodayIcon from '@material-ui/icons/Today';
 
 const drawerWidth = 240;
 
@@ -59,6 +61,7 @@ function ResponsiveDrawer(props) {
   const[value, setValue] = useState(0);
   const ChangeToCustomer = (event, val) => {setValue(0);}
   const ChangeToTraining = (event, val) => {setValue(1);}
+  const ChangeToCalendar = (event, val) => {setValue(2);}
 
   return (
 
@@ -84,12 +87,18 @@ function ResponsiveDrawer(props) {
           <ListItemText>Trainings</ListItemText>
         </ListItem>
 
+        <ListItem button value={value} onClick={ChangeToCalendar}>
+          <ListItemIcon><TodayIcon /></ListItemIcon>
+          <ListItemText>Calendar</ListItemText>
+        </ListItem>
+
       </List>
 
       </Drawer>
 
       {value === 0 && <Customerlist />}
       {value === 1 && <Traininglist />}
+      {value === 2 && <Calendarpage />}
 
     </div>
   );
