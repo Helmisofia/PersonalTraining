@@ -12,7 +12,7 @@ import FaceIcon from '@material-ui/icons/Face';
 import DirectionsRunIcon from '@material-ui/icons/DirectionsRun';
 import Customerlist from '../components/customerlist';
 import Traininglist from '../components/traininglist';
-import Calendarpage from '../components/calendar';
+import Calendar from '../components/calendar';
 import TodayIcon from '@material-ui/icons/Today';
 
 const drawerWidth = 240;
@@ -98,7 +98,7 @@ function ResponsiveDrawer(props) {
 
       {value === 0 && <Customerlist />}
       {value === 1 && <Traininglist />}
-      {value === 2 && <Calendarpage />}
+      {value === 2 && <Calendar />}
 
     </div>
   );

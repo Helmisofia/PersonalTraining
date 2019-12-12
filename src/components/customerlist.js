@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 import ShowTrainings from './trainings';
 
 // alt + shift + F 
+// Ctrl+K+C/Ctrl+K+U
 
 const Customerlist = () => {
     const [customers, setCustomers] = useState([]);
