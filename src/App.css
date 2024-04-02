@@ -20,12 +20,12 @@
 .App-link {
   color: #09d3ac;
 }
-
+/* 
 @charset "UTF-8";
 .fc {
   direction: ltr;
   text-align: left;
-}
+} */
 
 .fc-rtl {
   text-align: right;
